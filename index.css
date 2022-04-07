@@ -1,0 +1,21 @@
+
+.nodeClass {
+	width: 30px;
+  height: 30px;
+  padding: 5px;
+  text-align: center;
+	border: 2px solid red;
+  border-radius: 50px; 
+}
+table, th, td {
+  padding: 10px;
+}
+
+.huffman_tree{
+    width:80%; 
+    align-content: center;
+    border: 1px;
+    border-color: blue;
+    padding-left: 5px;
+    
+}
