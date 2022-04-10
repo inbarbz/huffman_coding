@@ -1,10 +1,32 @@
+.title{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 5px;
+  font-size: 300%;
+  font-weight: bold;
+  color: cadetblue;
+}
+h2{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 5px;
+  font-size: 180%;
+  font-weight: bold;
+  color: cadetblue;
 
+}
+
+b{
+  color: rgba(115, 187, 82, 0.925);
+}
+img{
+  padding-top: 5px;
+}
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .nodeClass {
-	width: 30px;
-  height: 30px;
   padding: 5px;
   text-align: center;
-	border: 2px solid red;
+	border: 2px solid rgba(133, 213, 95, 0.925);
   border-radius: 50px; 
 }
 table, th, td {
@@ -17,5 +39,50 @@ table, th, td {
     border: 1px;
     border-color: blue;
     padding-left: 5px;
-    
 }
+
+.buttons_div {
+  width: 100%;
+  align-content: center;
+  padding-left: 50%;
+  padding-top: 20px;
+  vertical-align: center;
+}
+
+#step_number {
+  display: inline;
+  vertical-align: middle;
+  padding: 10px;
+  font-size: x-large;
+  font-weight: bold;
+  color: cadetblue;
+}
+
+#huffman_text_id {
+  width: 80%;
+}
+
+.arrow_button {
+  padding-top: 10px;
+  float: left;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.line{
+  position:absolute;
+  width:1px;
+  background-color:rgb(251, 118, 29);
+}  
+
+
+.child_class {
+  width: 50%;
+}
+
+.root_class {
+  margin: auto;
+  width: 50%;
+}
+
+

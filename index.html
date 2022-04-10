@@ -1,39 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"> 
-  <link rel="stylesheet" href="index.css" type="text/css"> 
-  <script type="text/javascript" src ="huffman_coding.js"></script>
-  <script type="text/javascript" src ="test.js"></script>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="index.css" type="text/css">
+  <script type="text/javascript" src="huffman_coding.js"></script>
+  <script type="text/javascript" src="drawing.js"></script>
+  <script type="text/javascript" src="test.js"></script>
+  <script type="text/javascript" src="draw_line.js"></script>
   <script type="text/javascript">
     test();
   </script>
-  <title>Huffman coding  tutorial</title>
+  <title>Huffman coding tutorial</title>
 </head>
-<body>
-    <h1>
-        Huffman Coding  Tutorial   
-    </h1>
-    <div>
-        Huffman coding is a lossless data compression algorithm, developed by David A. Huffman and published in his paper "A Method for the Construction of Minimum-Redundancy Codes” in 1952. The idea is to assign variable-length codes to input characters. The lengths of the assigned codes are based on the frequencies of corresponding characters. The most frequent character gets the smallest code and the least frequent character gets the largest code.The variable-length codes assigned to input characters are Prefix Codes, means the codes (bit sequences) are assigned in such a way that the code assigned to one character is not the prefix of code assigned to any other character. This is how Huffman Coding makes sure that there is no ambiguity when decoding the generated bitstream. 
-    </div>
- <br/>
- <textarea>
-     you may replace the text here with your own
- </textarea>
- <div>
-    
-     <button class="previous">
-            
-    </button>
 
-    <button class="next">
-        >>
-        </button>
- </div>
- 
- <div class="huffman_tree">
-dsd
- </div>
+<body>
+  <h1 class= "title">
+   <img src="tree.png" width="80px"> Huffman Coding Tutorial
+  </h1>
+  <div>
+    Huffman coding is a lossless data compression algorithm, developed by David A. Huffman and published in his paper "A
+    Method for the Construction of Minimum-Redundancy Codes” in 1952. The idea is to assign variable-length codes to
+    input characters. The lengths of the assigned codes are based on the frequencies of corresponding characters. The
+    most frequent character gets the smallest code and the least frequent character gets the largest code.The
+    variable-length codes assigned to input characters are Prefix Codes, means the codes (bit sequences) are assigned in
+    such a way that the code assigned to one character is not the prefix of code assigned to any other character. This
+    is how Huffman Coding makes sure that there is no ambiguity when decoding the generated bitstream. 
+    <br> <br>
+    <b>
+      Applications of Huffman Coding:
+      </b>
+      <ul>
+        <li>
+          They are used for transmitting fax and text.
+        </li>
+        <li>
+          They are used by conventional compression formats like PKZIP, GZIP, etc.
+
+        </li>
+        <li>
+           It is useful in cases where there is a series of frequently occurring characters.
+
+        </li>
+                </ul>
+
+
+  </div>
+  
+  <br/>
+  <h2>
+    Build a Huffman tree
+  </h2>
+  <div>
+    You may place your own text in the text-box and click the "next" button to watch the  Huffman encoding step by step
+  </div>
+  <br>
+  
+  Text to encode: <input type="text" id="huffman_text_id" value="you may replace"></input>
+  
+ <div class="buttons_div">
+    <div id="step_number">0</div> 
+    
+    <button class="arrow_button" onclick="next_step()"> NEXT </button>
+  </div>
+
+  <br/>
+  <br/>
+  <br/>
+
+  <div class="huffman_tree", id="huffman_tree_id">
+    dsd
+  </div>
 </body>
+
 </html>
