@@ -28,7 +28,7 @@ function get_frequencies(str) {
         letters: [prev_letter],
         count: counter
     });
-    return frequencies.sort((a,b) => (a.count > b.count) ? 1 : ((b.count > a.count) ? -1 : 0));;
+    return frequencies.sort((a, b) => (a.count > b.count) ? 1 : ((b.count > a.count) ? -1 : 0));;
 }
 
 // combine 2 objects into 1
@@ -45,25 +45,25 @@ function combine_objects(node_1, node_2) {
 // return array of objects combining the 2 least frequent elements
 function combine_least_frequent(nodes) {
     if (nodes.length <= 1) return nodes;
-    const sorted_nodes = nodes.sort((a,b) => (a.count > b.count) ? 1 : ((b.count > a.count) ? -1 : 0));
+    const sorted_nodes = nodes.sort((a, b) => (a.count > b.count) ? 1 : ((b.count > a.count) ? -1 : 0));
     return [combine_objects(sorted_nodes[0], sorted_nodes[1])].concat(sorted_nodes.slice(2, sorted_nodes.length));
 }
 
 
-function assignHuffmanCoding(node){
-    if(Array.isArray(node)){
-        node=node[0];
+function assignHuffmanCoding(node) {
+    if (Array.isArray(node)) {
+        node = node[0];
     }
 
-    if(node.huffmanCode == undefined){
+    if (node.huffmanCode == undefined) {
         node.huffmanCode = "0";
     }
-    if( node.left != undefined){
-        node.left.huffmanCode =  node.huffmanCode+ "0";
-        node.right.huffmanCode =  node.huffmanCode+ "1";
+    if (node.left != undefined) {
+        node.left.huffmanCode = node.huffmanCode + "0";
+        node.right.huffmanCode = node.huffmanCode + "1";
         assignHuffmanCoding(node.left);
         assignHuffmanCoding(node.right);
     }
-    
-      
+
+
 }

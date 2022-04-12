@@ -1,11 +1,12 @@
-.title{
+.title {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 5px;
   font-size: 300%;
   font-weight: bold;
   color: cadetblue;
 }
-h2{
+
+h2 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 5px;
   font-size: 180%;
@@ -14,31 +15,45 @@ h2{
 
 }
 
-b{
+.application {
+  font-size: 120%;
   color: rgba(115, 187, 82, 0.925);
 }
-img{
+
+.logo {
   padding-top: 5px;
 }
-body{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.huffman_img {
+  float: right;
+  padding-right: 10px;
 }
+
+body {
+  line-height: 180%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 5px;
+  padding-right: 20px;
+}
+
 .nodeClass {
   padding: 5px;
   text-align: center;
-	border: 2px solid rgba(133, 213, 95, 0.925);
-  border-radius: 50px; 
+  border: 2px solid rgba(133, 213, 95, 0.925);
+
+  border-radius: 50px;
 }
+
 table, th, td {
   padding: 10px;
 }
 
-.huffman_tree{
-    width:80%; 
-    align-content: center;
-    border: 1px;
-    border-color: blue;
-    padding-left: 5px;
+.huffman_tree {
+  width: 80%;
+  align-content: center;
+  border: 1px;
+  border-color: blue;
+  padding-left: 5px;
 }
 
 .buttons_div {
@@ -47,6 +62,13 @@ table, th, td {
   padding-left: 50%;
   padding-top: 20px;
   vertical-align: center;
+}
+
+hr {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top: 6px dotted cadetblue;
+  border-bottom: none;
 }
 
 #step_number {
@@ -67,13 +89,24 @@ table, th, td {
   float: left;
   padding: 5px;
   vertical-align: middle;
+  color: cadetblue;
 }
 
-.line{
-  position:absolute;
-  width:1px;
-  background-color:rgb(251, 118, 29);
-}  
+.arrow_button :hover {
+  padding-top: 10px;
+  float: left;
+  padding: 5px;
+  vertical-align: middle;
+  fill: rgb(56, 92, 94);
+  color: white;
+
+}
+
+.line {
+  position: absolute;
+  width: 1px;
+  background-color: rgb(251, 118, 29);
+}
 
 
 .child_class {
@@ -84,5 +117,3 @@ table, th, td {
   margin: auto;
   width: 50%;
 }
-
-

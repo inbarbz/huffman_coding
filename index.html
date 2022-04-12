@@ -15,20 +15,32 @@
 </head>
 
 <body>
-  <h1 class= "title">
-   <img src="tree.png" width="80px"> Huffman Coding Tutorial
+  <h1 class="title">
+    <img class="logo" src="tree.png" width="80px"> Huffman Coding Tutorial
   </h1>
   <div>
-    Huffman coding is a lossless data compression algorithm, developed by David A. Huffman and published in his paper "A
-    Method for the Construction of Minimum-Redundancy Codes” in 1952. The idea is to assign variable-length codes to
-    input characters. The lengths of the assigned codes are based on the frequencies of corresponding characters. The
-    most frequent character gets the smallest code and the least frequent character gets the largest code.The
-    variable-length codes assigned to input characters are Prefix Codes, means the codes (bit sequences) are assigned in
+    <div class=huffman_img>
+      <img src="huffman.jpg" width="260px">
+    </div>
+    <br>
+    Huffman coding is a <b>lossless</b> data compression algorithm, developed by David A. Huffman and published in his
+    paper "A
+    Method for the Construction of Minimum-Redundancy Codes” in 1952.
+
+    The idea is to assign variable-length codes to
+    input characters. The lengths of the assigned codes are <b> based on the frequencies </b> of corresponding
+    characters. The
+    most frequent character gets the smallest code and the least frequent character gets the largest code.
+    <br>
+    The variable-length codes assigned to input characters are <b>Prefix Codes</b>, means the codes (bit sequences) are
+    assigned in
     such a way that the code assigned to one character is not the prefix of code assigned to any other character. This
-    is how Huffman Coding makes sure that there is no ambiguity when decoding the generated bitstream. 
+    is how Huffman Coding makes sure that there is no ambiguity when decoding the generated bitstream.
     <br> <br>
-    <b>
-      Applications of Huffman Coding:
+    <div class="uses">
+
+      <b class="application">
+        Applications of Huffman Coding:
       </b>
       <ul>
         <li>
@@ -39,37 +51,64 @@
 
         </li>
         <li>
-           It is useful in cases where there is a series of frequently occurring characters.
+          It is useful in cases where there is a series of frequently occurring characters.
 
         </li>
-                </ul>
+      </ul>
 
 
+    </div>
   </div>
-  
-  <br/>
+  <br>
+  <hr>
+  <br>
   <h2>
     Build a Huffman tree
   </h2>
   <div>
-    You may place your own text in the text-box and click the "next" button to watch the  Huffman encoding step by step
+    You may place your own text in the text-box and click the "next" button to watch the Huffman encoding step by step
   </div>
   <br>
-  
+
   Text to encode: <input type="text" id="huffman_text_id" value="you may replace"></input>
-  
- <div class="buttons_div">
-    <div id="step_number">0</div> 
-    
+
+  <div class="buttons_div">
+    <div id="step_number">0</div>
+
     <button class="arrow_button" onclick="next_step()"> NEXT </button>
   </div>
 
-  <br/>
-  <br/>
-  <br/>
+  <br />
+  <br />
+  <br />
 
-  <div class="huffman_tree", id="huffman_tree_id">
-    dsd
+  <div class="huffman_tree" , id="huffman_tree_id">
+
+  </div>
+  <div>
+    <br>
+    <b class="application"> As can be seen in the demonstration above:</b> <br>
+    <ol>
+      <li>
+        we place the two <b>least common </b>characters along with their frequency into a <b>binary tree</b>, combining
+        them in a new node and adding the individual frequencies of each character together.
+      </li>
+      <li>
+        Then, we take the next two frequent characters and <b>repeat</b> the process until all characters are combined.
+
+      </li>
+      <li>
+        We follow each branch until the bottom is reached, <b>assigning 0 for branches on the left and a 1 for those on
+          the right</b>.
+      </li>
+      <li>
+        The result is an <b>optimal and unique bit pattern</b> for each of the characters (as can be seen in the
+        brackets). This pattern can be identified following the various paths down the tree.
+      </li>
+    </ol>
+    <br>
+    <br>
+
   </div>
 </body>
 
